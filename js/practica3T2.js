@@ -13,8 +13,9 @@ let cantNar = prompt("Precio por kilo de manzanas");
 let preXKpla = prompt("Precio por kilo de platanos");
 let cantPla = prompt("Precio por kilo de platanos");
 
-let totalK = +cantMan + +cantNar + +cantPla;
+//let totalK = +cantMan + +cantNar + +cantPla;
+let totalK = Number(cantMan) + Number(cantNar) + Number(cantPla);
 
-let totalPagado = (+cantMan * +preXKman ) + (+cantNar * preXKnar) + (+cantPla * +preXKpla);
+let totalPagado = (Number(cantMan) * Number(preXKman)) + (Number(cantNar) * Number(preXKnar)) + (Number(cantPla) * Number(preXKpla));
 
 alert("Has comprado un total de "+totalK+" kilos de fruta y te ha costado "+totalPagado+" euros");
