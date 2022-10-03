@@ -9,24 +9,22 @@ alert
 */
 
 let valido;
-console.log("que pasa si "+ Number(valido));
+//console.log("que pasa si "+ Number(valido));
 
-console.log( " tipo antes del while: "+typeof valido);
+//console.log( " tipo antes del while: "+typeof valido);
 while (valido != "number"){
     valido = prompt("introduce un numero");
-    console.log("que pasa si "+ Number(valido));
-    console.log("dentro del while tipo de valido = "+typeof valido);
+    //console.log("que pasa si "+ Number(valido));
+    //console.log("dentro del while tipo de valido = "+typeof valido);
     let cambio = Number(valido);
-    console.log("prueva del Number"+cambio);
-    if(cambio != 0){
-        if(Number.isInteger(Number(valido))){
+    //console.log("prueva del Number"+cambio);
+    
+        if(Number.isInteger(Number(valido)) && cambio != 0){
                 alert("el numero es "+valido);
             }else{
                 console.log("no es un numero");
             }
-    }
-    else{
-        console.log("no es un numero");
-    }
+    
+    
     
 }
