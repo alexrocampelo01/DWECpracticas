@@ -9,6 +9,14 @@ function isPrime( n ) {
     let mensage;
     let booleanPrimo;
     let res;
+    for(let i=1; i<primo; i++){
+        if(primo % i != 0){
+            return booleanPrimo = true;
+        }else{
+            return booleanPrimo = false;
+        }
+    }
+    /*
     if (primo % primo == 0 && primo % 1 == primo){
         booleanPrimo = true;
         return mensage = "es primo";
@@ -16,6 +24,7 @@ function isPrime( n ) {
         booleanPrimo = false;
         return mensage = "no primo";
     }
+    */
     console.log(booleanPrimo);
      
     
