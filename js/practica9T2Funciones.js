@@ -16,4 +16,11 @@ for( let i=1; i<n-1; i++){
     console.log(" Despues primer elemto ="+ num1+"segundo elemeto "+num2+"fibonachi = "+fibo);
 }
 return fibo;
+function fiboRecursivo(n){
+    if((n==0) || (n==1)){
+        return n;
+    }else{
+        return fiboRecursivo(n-1) + fiboRecursivo(n-2);
+    }
+}
 }
