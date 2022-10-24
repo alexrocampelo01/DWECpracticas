@@ -45,6 +45,7 @@ let primePar = arr.find(); // de buelve el primer elemto que cumpla la condicion
 let primeParIndex = arr.findIndex();// me debuelbe el index de la primera poscion que cumpla la condicion
 */
 //-----------------------FILTER
+/*EJER1 FILTER
 let arr =[1,2,3,4,5];
 let a = arr.filter(item => item%2==0);// debuelbe un array con todos los elemtos que cumplan la condicion 
 let arr1 = [
@@ -54,7 +55,52 @@ let arr1 = [
     { nombre: "Rigoverto", curso: 1, ciclo:"DAW" },
     { nombre: "Eugenio", curso: 2, ciclo:"ASMR" },
 ];
-let b = arr1.filter(item => item.ciclo == "ASMR" && item.curso == 2); //
+let b = arr1.filter(item => item.ciclo == "ASMR" && item.curso == 2);
 console.log(b);
+*/
+let str = "quitar vocales es lo que debes hacer";
+const vocales = "aeiouAEIOU"; 
+let letras = str.split('');
+console.log(letras);
+let sinVocales = letras.filter(item =>  item != "a" &&
+                                        item != "e" &&
+                                        item != "i" &&
+                                        item != "o" &&
+                                        item != "u" &&
+                                        item != " " 
+);
+console.log(sinVocales);
+let sinVocales2 = str.split('')
+                     .filter(item => !"aeiouAEIOU".includes(item))
+                     .join('');
+console.log("sin voales 2 \n "+sinVocales2);
+
+//array map
+let arr2 = [
+    { nombre: "Paco", curso: 2, ciclo:"SMR" },
+    { nombre: "Rodolfo", curso: 1, ciclo:"DAW" },
+];
+
+arr2 = arr2.map(item => `${item.nombre} ${item.curso}`);
+
+let arr = [1,58,5,619];
+arr.sort(); //modifica el array original//sort ordena como cadenas por defecto
+arr.sort((a,b) => parseInt(a) < parseInt(b) ? -1 :1);
+console.log(object);
+
+arr2 = arr2.sort((a,b) => (a.curso) < (b.curso) ? -1 :1);
+
+
+
+
+
+
+
+
+8
+
+
+
+
 
 
