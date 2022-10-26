@@ -42,16 +42,14 @@ let arr = [
         }
     }
 ]
-console.log( getAlumnoByCiclo("DAW", arr));
-function getAlumnoByCiclo(str, arr){
-    let alumnos = [];
+console.log( getNumberOfAlumnos("DAW", arr));
+function getNumberOfAlumnos(str, arr){
+    let cont = 0;
     arr.forEach(element => {
        if(element.ciclo == str){
-        console.log( element.nombre + element.ape1 + element.ape2);
-       alumno =( element.nombre +" "+ element.ape1 +" "+ element.ape2);
-       alumnos.push(alumno);
+        cont++;
        }
     });
-    return alumnos;
+    return cont;
 
 }

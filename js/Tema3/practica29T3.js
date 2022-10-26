@@ -42,16 +42,28 @@ let arr = [
         }
     }
 ]
-console.log( getAlumnoByCiclo("DAW", arr));
-function getAlumnoByCiclo(str, arr){
-    let alumnos = [];
+console.log(getAverage(arr));
+function getAverage(arr){
+    let informes = [];
     arr.forEach(element => {
-       if(element.ciclo == str){
-        console.log( element.nombre + element.ape1 + element.ape2);
-       alumno =( element.nombre +" "+ element.ape1 +" "+ element.ape2);
-       alumnos.push(alumno);
-       }
+        let informe = [];
+        let nombre= element.nombre +" "+ element.ape1+" "+element.ape2;
+        let notas = element.notas
+        let suma = 0;
+        let cont = 0;
+        for(let nota in notas){
+            suma += notas[nota];
+            cont++;
+        } 
+        let media = suma /cont;
+        console.log(suma);
+        console.log(cont);
+        informe["alumno"] = nombre;
+        informe["expediente"] = element.expediente;
+        informe["nota_media"] = media;
+        informes.push(informe);
     });
-    return alumnos;
+    return informes;
+    }
+    
 
-}

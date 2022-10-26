@@ -42,16 +42,17 @@ let arr = [
         }
     }
 ]
-console.log( getAlumnoByCiclo("DAW", arr));
-function getAlumnoByCiclo(str, arr){
-    let alumnos = [];
+console.log(getUserName(arr));
+function getUserName(arr){
+    let userNames = [];
     arr.forEach(element => {
-       if(element.ciclo == str){
-        console.log( element.nombre + element.ape1 + element.ape2);
-       alumno =( element.nombre +" "+ element.ape1 +" "+ element.ape2);
-       alumnos.push(alumno);
-       }
-    });
-    return alumnos;
+       let nom = element.nombre.toLowerCase();
+       let ape1Letra = element.ape1.charAt(0).toLowerCase();
+       let ape2Letra = element.ape2.charAt(0).toLowerCase();
+       let userName = nom +ape1Letra +ape2Letra;
+       userNames.push(userName);
+       });
+       return userNames;
+    }
+    
 
-}

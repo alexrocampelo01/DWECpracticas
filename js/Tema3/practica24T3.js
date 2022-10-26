@@ -60,7 +60,9 @@ function addNif(arr){
      
 }
 function calculoLetraNif(dni){
-    Letras = ["T","R","W","A","G","M","Y","Y","P","D","X","B","N","J","Z",
+    let letras =Array.from("TRWAGMYPDXBNJZSQVHLCKE");
+    let letras1 = "TRWAGMYPDXBNJZSQVHLCKE";charAt()
+    let Letras = ["T","R","W","A","G","M","Y","P","D","X","B","N","J","Z",
     "S","Q","V","H","L","C","K","E",];
 
     let calculo = dni % 23;
