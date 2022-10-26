@@ -90,15 +90,14 @@ console.log(object);
 
 arr2 = arr2.sort((a,b) => (a.curso) < (b.curso) ? -1 :1);
 
-
-
-
-
-
-
-
-8
-
+let arr3 = [1,3,34,5,67,8];
+let a = arr3.reduce((acum, item, index,arr)=>{
+return acum + item;
+}, 0)//cuatro parametros
+let arr4 = ["paco","alex","paco","roberto"];
+let b = arr3.reduce((acum, item, index,arr)=>{
+return acum + item.slice(0,2).toUpperCase();
+}, '')
 
 
 
