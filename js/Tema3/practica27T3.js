@@ -42,7 +42,7 @@ let arr = [
         }
     }
 ]
-console.log( getNumberOfAlumnos("DAW", arr));
+console.log( getNumberOfAlumnos2("DAW", arr));
 function getNumberOfAlumnos(str, arr){
     let cont = 0;
     arr.forEach(element => {
@@ -51,5 +51,10 @@ function getNumberOfAlumnos(str, arr){
        }
     });
     return cont;
+
+}
+function getNumberOfAlumnos2(str, arr){
+    //return arr.filter((item) => item.ciclo == str).length;
+    return arr.filter(({ciclo}) => ciclo == str).length;
 
 }

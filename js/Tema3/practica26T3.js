@@ -52,6 +52,13 @@ function getAlumnoByCiclo(str, arr){
        alumnos.push(alumno);
        }
     });
+    //ejemplo victor
+    /*
+    $alumnos = arr.filter(item => item.ciclo == str).forEach(element =>{
+        ({nombre, apel1, apel2} => $alumnos.push(`${nombre} ${apel1} ${apel2}`));
+    });
+*/
+    
     return alumnos;
 
 }

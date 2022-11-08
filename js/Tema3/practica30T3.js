@@ -42,10 +42,20 @@ let arr = [
         }
     }
 ]
+let str = hola;
+str.hasLo
 console.log(getUnsecurePass);
 function getUnsecurePass(arr){
     arr.forEach(element => {
         $contraseña = element.pass;
-        $balida = true;
+        $valida = true;
+        if(element.pass.length >= 8){
+
+        }else if(element.pass.has) {
+            
+        } else {
+            
+        }
+
     });
 }

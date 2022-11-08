@@ -51,11 +51,14 @@ function getAverage(arr){
         let notas = element.notas
         let suma = 0;
         let cont = 0;
+        
         for(let nota in notas){
             suma += notas[nota];
             cont++;
         } 
-        let media = suma /cont;
+        let media = element.nota.reduce((acum, item,index) => {
+            return(index < (arr.length-1) ? acum +item :(acum+item) / (arr.length));
+        },0)
         console.log(suma);
         console.log(cont);
         informe["alumno"] = nombre;
