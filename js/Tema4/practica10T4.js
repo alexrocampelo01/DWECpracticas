@@ -1,0 +1,1 @@
+$colorFondo = document.body.style.background = rgb(28, 196, 25);

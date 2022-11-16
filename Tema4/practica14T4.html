@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+p{
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #206A5D;
+    color: white;
+    font-size: 7em;
+    height: 200px;
+    font-weight: 700;
+}
+
+#main {
+    height: 100%;
+    min-height: 100vw;
+    display: flex;
+    flex-direction: row;
+    
+}
+#products-section {
+    width: 70vw;
+    height: 100%;
+    height: auto;
+    background-color: #FFCC29;
+}
+#cart-section {
+    width: 30vw;
+    height: 100%;
+    min-height: 500vh;
+    min-width: 350;
+    background-color: #CA9E13;
+}
+.producto{
+    width: 200px;
+    height: 300px;
+    margin: 50px;
+    position:relative;
+    float: left;
+    background-color: lime;
+}
+img{
+    width: auto;
+    height: 200px;
+}
+.producto-data{
+    width: auto;
+    background-color: orange;
+    position: relative;
+}
+.datos{
+    display: flex;
+    align-items: center;
+}
+.precio{
+    width: 100px;
+    margin-left: 10px;
+}
+.boton{
+    width: 70px;
+}
+.añadir{
+
+}
+table, tr, td, th{
+    background-color: white;
+    border: solid 3px ;
+    border-collapse: collapse;
+    align-items: center;
+    
+}
+
+    </style>
+</head>
+<body>
+    <header id="header">
+        <h1>frutería San Andres</h1>   
+    </header>
+    <div id="main">
+        <!--cramos un producto de ejemplo -->
+        <!-- comentamos el caso de ejemplo para finalizar
+        <div id="products-section">
+            <div class="producto">
+                <img src="https://vgonzalez165.github.io/dwec/assets/pr0414/imgs/fresas.jpg',
+                " alt="frutaFresa">
+                <div class="producto-data">
+                    <h3>nombre</h3>
+                    <div class="datos">
+                        <div class="precio">
+                            <p>2,80€/kg</p>
+                        </div>
+                        <div class="boton" >
+                            <button class="añadir" data-id="">añadir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cart-section">
+            <h1>lugar de las card</h1>
+        </div>
+    </div>
+    <div>-->
+        <div id="products-section">
+             
+        </div>
+        <div id="cart-section">
+            <h1>lugar de las card</h1>
+            <div id="tabla">
+                <table>
+                    <tr>
+                        <th>cant.</th>
+                        <th colspan="3">Producto</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td colspan="3">fresa</td>
+                        <td>4,1</td>
+                    </tr>
+                </table>  
+            </div>
+            
+        </div>
+        
+    <script src="../js/Tema4/practica14T4.js"></script>
+</body>
+</html>
