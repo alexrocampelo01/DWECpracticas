@@ -99,14 +99,22 @@ let productsArr = [
   ];
   let pagina = 1;
   let paginasMax = productsArr.length/8;
+  let cesta = [];
+  cargarPagina();
+  function cargarPagina(){
   productsArr.filter((item,index) => ((index/8)>=pagina-1 && (index/8)<pagina))
              .forEach(generarProducto);
   console.log("prueva funcinamiento scrip");
   //cremos la barra de nabegacion
+  crearBarraNavegacion();
+}
+  //funcion que nos crea la barra de nabegacion
+function crearBarraNavegacion(){
+
+
   //creo las divisiones que van ha integrar el navegador
   let divProducts = document.querySelector('#products-section');
   let divNavegacion = craerDivConClass('navegacion');
-
 // creo el boton de siguiente
   let butonNext = document.createElement('button');
   butonNext.textContent = ">";
@@ -124,7 +132,7 @@ let productsArr = [
   divNavegacion.append(butonNext);
   butonBack.addEventListener("click",pasarPaguina);
   butonNext.addEventListener("click",pasarPaguina);
-  
+}
   //
   function pasarPaguina(event){
     let accion = event.target.dataset.action;
@@ -142,9 +150,7 @@ let productsArr = [
         console.log("no sumo ");
       }
     }
-    productsArr.filter((item,index) => ((index/8)>=pagina-1 && (index/8)<pagina))
-             .forEach(generarProducto);
-    //console.log("prueva funcinamiento scrip");
+    cargarPagina();
   }
   
 
@@ -198,11 +204,6 @@ let productsArr = [
 
   }
     
-
-function anadirCarrito(event){
-  console.log(event.target.dataset.id);
-
-}
 function craerDivConClass(clase){
     let div = document.createElement('div');
     div.classList.add(clase);
@@ -213,5 +214,28 @@ function crarImg(src, alt){
     img.src = src;
     img.alt = alt;
     return img;
+}
+function anadirCarrito(event){
+  let idP = event.target.dataset.id;
+  console.log(idP);
+  let añadir = productsArr.find(item => item.id == idP);
+  //añadir ahora mismo contiene el pruducto selecionado 
+  //lo siguiente que ahremos sera guardar sus valores en variables
+  let precio = añadir.price;
+  let nombre = añadir.product;
+  
+  
+  
+  //cramos la propiedad cantidad que nos dira cuantos veces se ha pulsado un boton
+  cesta =
+   {
+    id:idP,
+    precio: precio,
+    nombre: nombre,
+    cant: cantidad,
+  };
+
+  //cramos los elementos de la tabla 
+  console.log(cesta);
 }
 
