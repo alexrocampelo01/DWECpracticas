@@ -1,1 +1,1 @@
-$colorFondo = document.body.style.background = rgb(28, 196, 25);
+let colorFondo = document.body.style.background = "#A54818";

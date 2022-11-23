@@ -221,21 +221,22 @@ function anadirCarrito(event){
   let añadir = productsArr.find(item => item.id == idP);
   //añadir ahora mismo contiene el pruducto selecionado 
   //lo siguiente que ahremos sera guardar sus valores en variables
-  let precio = añadir.price;
-  let nombre = añadir.product;
-  
-  
+  let productoCarrito = cesta.findIndex((item) => item.id == idP);
+
+  if(productoCarrito != -1){
+    carrito[productoCarrito].cant +=1;
+  }else{
+    carrito.push(
+      {
+        ...añadir,
+        cant:1,
+      }
+    )
+  }
   
   //cramos la propiedad cantidad que nos dira cuantos veces se ha pulsado un boton
-  cesta =
-   {
-    id:idP,
-    precio: precio,
-    nombre: nombre,
-    cant: cantidad,
-  };
-
+  
   //cramos los elementos de la tabla 
-  console.log(cesta);
 }
+
 
