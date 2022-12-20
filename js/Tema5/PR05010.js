@@ -14,7 +14,7 @@ fecha.onblur = function (){
     }
 }
 let telefono = formu.elements.tlf;
-console.log(telefono);
+//console.log(telefono);
 telefono.onblur = function (){
     let valido = telefono.value.match(/\(?\+[0-9]{2}\)? ?[0-9]{3} ?[0-9]{2} ?[0-9]{2} ?[0-9]{2}/);
     console.log(valido);
@@ -28,13 +28,39 @@ telefono.onblur = function (){
 let email = formu.elements.email;
 console.log(email);
 email.onblur = function (){
-    //let exReg = / /;
-    let valido = email.value.match(/.+@.+\..+ /);
+    let exReg = /.+@.+\..+/;
+    let valido = exReg.test(exReg);
     console.log(valido);
     if(valido){
-        console.log("la Telefono cumple la expresion");
+        console.log("la Correo cumple la expresion");
     }else{
-        console.log("la Telefono no cumple la expresion");
+        console.log("la correo no cumple la expresion");
+
+    }
+}
+let email = formu.elements.email;
+console.log(email);
+email.onblur = function (){
+    let exReg = /.+@.+\..+/;
+    let valido = exReg.test(exReg);
+    console.log(valido);
+    if(valido){
+        console.log("la Correo cumple la expresion");
+    }else{
+        console.log("la correo no cumple la expresion");
+
+    }
+}
+let email = formu.elements.email;
+console.log(email);
+email.onblur = function (){
+    let exReg = /.+@.+\..+/;
+    let valido = exReg.test(exReg);
+    console.log(valido);
+    if(valido){
+        console.log("la Correo cumple la expresion");
+    }else{
+        console.log("la correo no cumple la expresion");
 
     }
 }
