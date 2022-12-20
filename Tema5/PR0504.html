@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #contador{
+            background-color: aquamarine;
+            text-align: center;
+            height: 120px;
+        }
+        #campo{
+            height: calc(100vh - 150px);
+            width: auto;
+            background-color: blue;
+        }
+        #cubo{
+            background-color: red;
+            position: relative;
+            z-index: 2;
+        }
+        .tamano{
+            width: 200px;
+            height: 200px;
+        }
+        .posicion{
+            top: 100px;
+            left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="contador">
+    </div>
+    <div id="campo">
+        <div id="cubo" class="tamano posicion">
+        </div>
+    </div>
+    <script src="../js/Tema5/PR0504.js"></script>
+</body>
+</html>

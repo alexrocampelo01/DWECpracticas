@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 400px;
+            height: auto;
+            background-color: bisque;
+            align-items: center;
+            margin: auto;
+        }
+        form{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 30px;
+
+        }
+        input{
+            font-size: 30px;
+        }
+        
+        #error{
+            color: black;
+            background-color: red;
+            width: 100px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Practica 7</h1>
+    <div id="login">
+        <form name="login">
+            <label for="correo">Correo electronico</label>
+            <input type="text" name="correo"><br>
+            <label for="pass">Contraseña</label>
+            <input type="text" name="pass">
+            <span id="seguridad">no segura</span>
+            <br>
+            <label for="passRepe">Repita Contraseña</label>
+            <input type="text" name="passRepe">
+            <br>
+            <input type="submit" name="envio" value="enviar">
+        </form>
+    </div>
+    <div id="error">
+    </div>
+    <script src="../js/Tema5/PR0507.js"></script>
+</body>
+</html>
