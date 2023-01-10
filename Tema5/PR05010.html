@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            display: inline;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <form id="expresiones">
@@ -16,6 +22,21 @@
         <input name="email" type="text"><br>
         <label>Un código de color en hexadecimal.</label>
         <input name="color" type="text"><br>
+        <label>Una IP:</label>
+        <input name="ip" type="text"><br>
+        <label>Una contraseña con:</label>
+            <input name="contraseña" type="text">
+            <ul>
+                <li>al menos 1 minuscula</li>
+                <li>al menos 1 Mayuscula</li>
+                <li>al menos 1 digito</li>
+                <li>Minimo 8 carateres</li>
+            </ul>
+        <br>
+        <label>Un NIF.</label>
+        <input name="nif" type="text"><br>
+        <label>Una matrícula de coche.</label>
+        <input name="matricula" type="text"><br>
     </form>
     <script src="../js/Tema5/PR05010.js"></script>
 </body>
