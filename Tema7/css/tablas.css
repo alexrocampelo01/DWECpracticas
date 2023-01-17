@@ -1,0 +1,17 @@
+table{
+    padding: 5px;
+    background-color:aqua ;
+    border: 5px solid red;
+    border-collapse: collapse;
+    font-size: 30px;
+}
+tr, td, th{
+    border: 2px solid red;
+}
+
+span{
+ background-color: blanchedalmond;
+ margin: 10px;
+ margin-top: 50px;
+ cursor: pointer;
+}
